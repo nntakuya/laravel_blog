@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Note
+//Route::any('/notes', function() {
+//  dd('test');
+//});
+
+Route::resource('notes', 'NoteController');
+
